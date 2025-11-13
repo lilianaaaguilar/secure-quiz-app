@@ -1,14 +1,13 @@
 {% extends "layout.html" %}
 
-{% block title %}Page 3--Now we know everything!{% endblock %}
+{% block title %}How you did!{% endblock %}
 
 {% block content %}
-  <h1>Now I know:</h1>
+  <h1>Answers:</h1>
 
 <ul>
- <li> Your first name is: {{ session['firstName'] }} </li>
- <li> Your last name is: {{ session['lastName'] }} </li>
- <li> Your favorite color is: {{ session['favoriteColor'] }} </li>
+ <li> Your answer for #1 was: {{ session['firstResponse'] }} </li>
+ <li> Your answer for #2 was: {{ session['secondResponse'] }} </li>
 </ul>
 
 
