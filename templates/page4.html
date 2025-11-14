@@ -1,16 +1,15 @@
 {% extends "layout.html" %}
 
-{% block title %}How you did!{% endblock %}
+{% block title %}Question 4{% endblock %}
 
 {% block content %}
-  <h1>Answers:</h1>
+  <h1>Question 4: The more of this there is, the less you see. What is it?</h1>
 
-<ul>
- <li> Your answer for #1 was: {{ session['firstResponse'] }} </li>
- <li> Your answer for #2 was: {{ session['secondResponse'] }} </li>
- <li> Your answer for #3 was: {{ session['thirdResponse'] }} </li>
-</ul>
-
+ <form action={{ url_for("renderPage5") }} method="POST">
+  Answer: Your ...<br>
+  <input type="text" name="fourthResponse" required>
+  <input type="submit" value="Submit">
+ </form> 
 
 
 {% endblock %}

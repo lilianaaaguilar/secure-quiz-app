@@ -41,5 +41,16 @@ def renderPage4():
     session["thirdResponse"]=request.form['thirdResponse']
     return render_template('page4.html')
     
+@app.route('/page5',methods=['GET','POST'])
+def renderPage5():
+    session["fourthResponse"]=request.form['fourthResponse']
+    return render_template('page5.html')
+    
+@app.route('/page6',methods=['GET','POST'])
+def renderPage6():
+    session["fifthResponse"]=request.form['fifthResponse']
+    return render_template('page6.html')
+    
+    
 if __name__=="__main__":
     app.run(debug=False)
