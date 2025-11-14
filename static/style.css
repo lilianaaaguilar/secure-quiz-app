@@ -1,15 +1,17 @@
 body {
-
-    background-color: #ffffcc;
+    background-color: #f8e3ff;
     color: black;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    margin-right: 75px;
+    margin-left: 75px;
 }
 
 div#footer {
-    
-    font-size: 0.8em;
-    background-color: #ccffff;
-    border: 4px solid grey;
+    font-size: 15px;
+    background-color: #ffc9e9;
+    border: 4px solid #f051ae;
     margin-top: 3em;
     padding: 1em;
+    text-align: center;
 }
-

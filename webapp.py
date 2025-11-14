@@ -35,6 +35,11 @@ def renderPage2():
 def renderPage3():
     session["secondResponse"]=request.form['secondResponse']
     return render_template('page3.html')
+
+@app.route('/page4',methods=['GET','POST'])
+def renderPage4():
+    session["thirdResponse"]=request.form['thirdResponse']
+    return render_template('page4.html')
     
 if __name__=="__main__":
     app.run(debug=False)
