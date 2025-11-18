@@ -6,13 +6,14 @@
   <h1>Answers:</h1>
 
 <ul>
- <li> Your answer for #1 was: {{ session['firstResponse'] }} </li>
- <li> Your answer for #2 was: {{ session['secondResponse'] }} </li>
- <li> Your answer for #3 was: {{ session['thirdResponse'] }} </li>
- <li> Your answer for #4 was: {{ session['fourthResponse'] }} </li>
- <li> Your answer for #5 was: {{ session['fifthResponse'] }} </li>
+ <li> Your answer for #1 was: {{ session['firstResponse'] }}. This answer is "{{ answer1 }}" </li>
+ <li> Your answer for #2 was: {{ session['secondResponse'] }}. This answer is "{{ answer2 }}" </li>
+ <li> Your answer for #3 was: {{ session['thirdResponse'] }}. This answer is "{{ answer3 }}" </li>
+ <li> Your answer for #4 was: {{ session['fourthResponse'] }}. This answer is "{{ answer4 }}" </li>
+ <li> Your answer for #5 was: {{ session['fifthResponse'] }}. This answer is "{{ answer5 }}" </li>
 </ul>
-
-
+<br>
+<p>You took {{ timeTaken }} seconds.</p>
+<p>You got a score of {{ score }}/5.</p>
 
 {% endblock %}
